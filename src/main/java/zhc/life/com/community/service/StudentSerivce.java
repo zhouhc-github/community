@@ -8,4 +8,5 @@ import java.util.List;
 @Service
 public interface StudentSerivce {
     public List<Student> selectAll();
+    public int insert(Student student);
 }

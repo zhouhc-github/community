@@ -4,6 +4,7 @@ public class Student {
     String name;
     Integer score;
     Integer id;
+    Integer uid;
 
     public String getName() {
         return name;
@@ -29,12 +30,21 @@ public class Student {
         this.id = id;
     }
 
+    public Integer getUid() {
+        return uid;
+    }
+
+    public void setUid(Integer uid) {
+        this.uid = uid;
+    }
+
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("Student{");
         sb.append("name='").append(name).append('\'');
         sb.append(", score=").append(score);
         sb.append(", id=").append(id);
+        sb.append(", uid=").append(uid);
         sb.append('}');
         return sb.toString();
     }
